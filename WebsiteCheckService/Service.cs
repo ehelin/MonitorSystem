@@ -42,6 +42,8 @@ namespace WebsiteCheckService
 
             string intervalStr = System.Configuration.ConfigurationSettings.AppSettings["Interval"];
             int interval = Convert.ToInt32(intervalStr);
+            
+            EventLog.WriteEntry("Interval is " + interval.ToString() + " milliseconds");
 
             _time = new Timer();
             _time.Enabled = true;
