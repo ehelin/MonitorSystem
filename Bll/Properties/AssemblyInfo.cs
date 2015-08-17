@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("BLL")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("GDF Suez NA")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("BLL")]
-[assembly: AssemblyCopyright("Copyright © GDF Suez NA 2012")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

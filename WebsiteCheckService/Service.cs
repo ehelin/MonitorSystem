@@ -40,9 +40,12 @@ namespace WebsiteCheckService
         {
             EventLog.WriteEntry(ServiceConstants.TIMER_SETUP);
 
+            string intervalStr = System.Configuration.ConfigurationSettings.AppSettings["Interval"];
+            int interval = Convert.ToInt32(intervalStr);
+
             _time = new Timer();
             _time.Enabled = true;
-            _time.Interval = 5000;   
+            _time.Interval = interval;   
             _time.AutoReset = true;
             _time.Elapsed += new System.Timers.ElapsedEventHandler(this.OnTimedEvent);
 
